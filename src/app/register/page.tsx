@@ -44,7 +44,7 @@ export default function RegistrationPage() {
         formData,
         {
           headers: {
-            Authorization: `Bearer 96fd60b7021c10806fd68311748d178471b99ddc0a1ad0f366c2738dd6be5ed3`,
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_SECRET}`,
           },
         }
       );
